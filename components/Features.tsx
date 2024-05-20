@@ -45,13 +45,13 @@ const Features = () => {
   )
 }
 
-type FeatureElement = {
-  title: 'string',
-  icon: 'string',
-  description: 'string'
+type FeatureElementProps = {
+  title: string,
+  icon: string,
+  description: string
 }
 
-const FeatureElement = ({title, icon, description}) => {
+const FeatureElement = ({title, icon, description}:FeatureElementProps) => {
   return (
     <li className='flex w-full flex-1 flex-col items-start'>
       <div className='rounded-full p-4 lg:p-2 bg-green-50'>
